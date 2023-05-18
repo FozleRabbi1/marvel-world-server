@@ -1,7 +1,7 @@
 [
     {
         "picture": "https://i.ibb.co/YjLtf4J/ironman3.jpg",
-        "Sub-category": "Ironman",
+        "Sub_category": "Ironman",
         "toy_name": "Ironman Mark XLIII Action Figure",
         "seller_name": "Toys Galore",
         "seller_email": "toysgalore@example.com",
@@ -12,7 +12,7 @@
       },
       {
         "picture": "https://i.ibb.co/1Gd1yyW/ironman4.jpg",
-        "Sub-category": "Ironman",
+        "Sub_category": "Ironman",
         "toy_name": "Ironman Arc Reactor Prop Replica",
         "seller_name": "Geek Haven",
         "seller_email": "geekhaven@example.com",
@@ -23,7 +23,7 @@
       },
       {
         "picture": "https://i.ibb.co/3yQtd1s/ironman.jpg",
-        "Sub-category": "Ironman",
+        "Sub_category": "Ironman",
         "toy_name": "Ironman Helmet Replica",
         "seller_name": "Hero Collectibles",
         "seller_email": "herocollectibles@example.com",
@@ -34,7 +34,7 @@
       },
       {
         "picture": "https://i.ibb.co/JBXXZCy/ironman2.jpg",
-        "Sub-category": "Ironman",
+        "Sub_category": "Ironman",
         "toy_name": "Ironman Gauntlet Power Bank",
         "seller_name": "Gadget Emporium",
         "seller_email": "gadgetemporium@example.com",
@@ -45,7 +45,7 @@
       },
       {
         "picture": "https://i.ibb.co/51L8NP0/hulk2.jpg",
-        "Sub-category": "Hulk",
+        "Sub_category": "Hulk",
         "toy_name": "Hulk Smash Action Figure",
         "seller_name": "Superhero Superstore",
         "seller_email": "superherostore@example.com",
@@ -56,7 +56,7 @@
       },
       {
         "picture": "https://i.ibb.co/9Ybt0C7/hulk3.jpg",
-        "Sub-category": "Hulk",
+        "Sub_category": "Hulk",
         "toy_name": "Hulk Hands Plush Gloves",
         "seller_name": "Toy Universe",
         "seller_email": "toyuniverse@example.com",
@@ -67,7 +67,7 @@
       },
       {
         "picture": "https://i.ibb.co/WHvxTDJ/hulk.jpg",
-        "Sub-category": "Hulk",
+        "Sub_category": "Hulk",
         "toy_name": "Hulk Buster Playset",
         "seller_name": "Kids Emporium",
         "seller_email": "kidsemporium@example.com",
@@ -78,7 +78,7 @@
       },
       {
         "picture": "https://i.ibb.co/jzL9DWK/mra3.jpg",
-        "Sub-category": "Mr-America",
+        "Sub_category": "Mr-America",
         "toy_name": "Mr. America Action Figure",
         "seller_name": "Superhero Superstore",
         "seller_email": "superherostore@example.com",
@@ -89,7 +89,7 @@
       },
       {
         "picture": "https://i.ibb.co/TThH0Wd/mra4.jpg",
-        "Sub-category": "Mr-America",
+        "Sub_category": "Mr-America",
         "toy_name": "Mr. America Shield Replica",
         "seller_name": "Collectible Corner",
         "seller_email": "collectibles@example.com",
@@ -100,7 +100,7 @@
       },
       {
         "picture": "https://i.ibb.co/MN5fyG9/mra2.jpg",
-        "Sub-category": "Mr-America",
+        "Sub_category": "Mr-America",
         "toy_name": "Mr. America Costume Set",
         "seller_name": "Party Planet",
         "seller_email": "partyplanet@example.com",
@@ -111,7 +111,7 @@
       },
       {
         "picture": "https://i.ibb.co/k1hFS8Q/mra.jpg",
-        "Sub-category": "Mr-America",
+        "Sub_category": "Mr-America",
         "toy_name": "Mr. America Comic Book",
         "seller_name": "Comic Emporium",
         "seller_email": "comicemporium@example.com",

@@ -14,7 +14,6 @@ app.use(express.json());
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.ra0tvnn.mongodb.net/?retryWrites=true&w=majority`;
 
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
     serverApi: {
         version: ServerApiVersion.v1,
@@ -35,8 +34,14 @@ async function run() {
 
         app.get("/categoryToyData", async (req, res) => {
             const name = req.query.name;
-            const SubCategoryData = await toyCollections.find({ "Sub-category": { $regex: name } }).toArray();
+            const SubCategoryData = await toyCollections.find({ "Sub_category": { $regex: name } }).toArray();
             res.send(SubCategoryData);
+        });
+
+        app.get("/allToysDatasName", async (req, res) => {
+            const toyName = req.query.toyName;
+            const searchToy = await toyCollections.find({ "toy_name": { $regex: toyName } }).toArray();
+            res.send(searchToy);
         });
 
 
