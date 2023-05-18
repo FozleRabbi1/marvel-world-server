@@ -1,0 +1,124 @@
+[
+    {
+        "picture": "https://i.ibb.co/YjLtf4J/ironman3.jpg",
+        "Sub-category": "Ironman",
+        "toy_name": "Ironman Mark XLIII Action Figure",
+        "seller_name": "Toys Galore",
+        "seller_email": "toysgalore@example.com",
+        "price": 29.99,
+        "rating": 4.5,
+        "available_quantity": 10,
+        "detail_description": "Bring home the powerful Ironman Mark XLIII action figure and recreate epic battles from the Marvel Universe. This highly detailed figure comes with interchangeable parts and various points of articulation for dynamic posing."
+      },
+      {
+        "picture": "https://i.ibb.co/1Gd1yyW/ironman4.jpg",
+        "Sub-category": "Ironman",
+        "toy_name": "Ironman Arc Reactor Prop Replica",
+        "seller_name": "Geek Haven",
+        "seller_email": "geekhaven@example.com",
+        "price": 79.99,
+        "rating": 4.8,
+        "available_quantity": 5,
+        "detail_description": "Own a piece of Ironman technology with this Arc Reactor Prop Replica. The reactor lights up and features intricate detailing inspired by the movies. It's a must-have for any Ironman fan or collector."
+      },
+      {
+        "picture": "https://i.ibb.co/3yQtd1s/ironman.jpg",
+        "Sub-category": "Ironman",
+        "toy_name": "Ironman Helmet Replica",
+        "seller_name": "Hero Collectibles",
+        "seller_email": "herocollectibles@example.com",
+        "price": 149.99,
+        "rating": 4.9,
+        "available_quantity": 2,
+        "detail_description": "Feel like Tony Stark with this highly detailed Ironman Helmet Replica. The helmet features LED lights, sound effects, and a retractable faceplate. It's perfect for cosplay or display."
+      },
+      {
+        "picture": "https://i.ibb.co/JBXXZCy/ironman2.jpg",
+        "Sub-category": "Ironman",
+        "toy_name": "Ironman Gauntlet Power Bank",
+        "seller_name": "Gadget Emporium",
+        "seller_email": "gadgetemporium@example.com",
+        "price": 49.99,
+        "rating": 4.7,
+        "available_quantity": 8,
+        "detail_description": "Charge your devices in style with this Ironman Gauntlet Power Bank. The power bank is designed to resemble Ironman's gauntlet and features multiple charging ports. It's a functional and cool accessory for any Ironman enthusiast."
+      },
+      {
+        "picture": "https://i.ibb.co/51L8NP0/hulk2.jpg",
+        "Sub-category": "Hulk",
+        "toy_name": "Hulk Smash Action Figure",
+        "seller_name": "Superhero Superstore",
+        "seller_email": "superherostore@example.com",
+        "price": 34.99,
+        "rating": 4.6,
+        "available_quantity": 12,
+        "detail_description": "Unleash the fury of the Hulk with this incredible action figure. Featuring smashing action and a highly detailed sculpt, this toy brings the power and strength of the Hulk into your hands."
+      },
+      {
+        "picture": "https://i.ibb.co/9Ybt0C7/hulk3.jpg",
+        "Sub-category": "Hulk",
+        "toy_name": "Hulk Hands Plush Gloves",
+        "seller_name": "Toy Universe",
+        "seller_email": "toyuniverse@example.com",
+        "price": 19.99,
+        "rating": 4.3,
+        "available_quantity": 8,
+        "detail_description": "Feel like the Hulk with these soft and huggable plush gloves. Squeeze them to activate Hulk's smashing sound effects. Perfect for role-playing or adding a touch of Hulk to your costume."
+      },
+      {
+        "picture": "https://i.ibb.co/WHvxTDJ/hulk.jpg",
+        "Sub-category": "Hulk",
+        "toy_name": "Hulk Buster Playset",
+        "seller_name": "Kids Emporium",
+        "seller_email": "kidsemporium@example.com",
+        "price": 59.99,
+        "rating": 4.9,
+        "available_quantity": 3,
+        "detail_description": "Take on the Hulk with the Hulk Buster Playset. This set includes a highly detailed Hulk Buster figure and a poseable Hulk figure. Recreate epic battles or invent your own exciting scenarios."
+      },
+      {
+        "picture": "https://i.ibb.co/jzL9DWK/mra3.jpg",
+        "Sub-category": "Mr-America",
+        "toy_name": "Mr. America Action Figure",
+        "seller_name": "Superhero Superstore",
+        "seller_email": "superherostore@example.com",
+        "price": 24.99,
+        "rating": 4.5,
+        "available_quantity": 15,
+        "detail_description": "Celebrate the iconic Mr. America with this detailed action figure. The figure features a patriotic costume and multiple points of articulation for dynamic poses. Perfect for fans of the star-spangled hero."
+      },
+      {
+        "picture": "https://i.ibb.co/TThH0Wd/mra4.jpg",
+        "Sub-category": "Mr-America",
+        "toy_name": "Mr. America Shield Replica",
+        "seller_name": "Collectible Corner",
+        "seller_email": "collectibles@example.com",
+        "price": 49.99,
+        "rating": 4.8,
+        "available_quantity": 7,
+        "detail_description": "Display the symbol of freedom with this replica Mr. America Shield. The shield is made from high-quality materials and features accurate details. A must-have for any Mr. America collector or cosplayer."
+      },
+      {
+        "picture": "https://i.ibb.co/MN5fyG9/mra2.jpg",
+        "Sub-category": "Mr-America",
+        "toy_name": "Mr. America Costume Set",
+        "seller_name": "Party Planet",
+        "seller_email": "partyplanet@example.com",
+        "price": 39.99,
+        "rating": 4.7,
+        "available_quantity": 10,
+        "detail_description": "Transform into Mr. America with this complete costume set. The set includes a jumpsuit, mask, and accessories to bring the superhero to life. Perfect for Halloween, parties, or cosplay events."
+      },
+      {
+        "picture": "https://i.ibb.co/k1hFS8Q/mra.jpg",
+        "Sub-category": "Mr-America",
+        "toy_name": "Mr. America Comic Book",
+        "seller_name": "Comic Emporium",
+        "seller_email": "comicemporium@example.com",
+        "price": 9.99,
+        "rating": 4.4,
+        "available_quantity": 20,
+        "detail_description": "Immerse yourself in the adventures of Mr. America with this thrilling comic book. Join him on heroic missions, face villains, and uphold justice in the pages of this action-packed graphic novel."
+      }
+
+]
