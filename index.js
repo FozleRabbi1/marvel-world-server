@@ -34,7 +34,7 @@ async function run() {
 
         app.get("/allToysDatas/:id", async (req, res) => {
             const id = req.params.id;
-            const query = {_id : new ObjectId(id)}
+            const query = { _id: new ObjectId(id) }
             const result = await toyCollections.find(query).toArray()
             res.send(result)
         })
@@ -47,7 +47,10 @@ async function run() {
 
         app.get("/allToysDatasName", async (req, res) => {
             const toyName = req.query.toyName;
-            const searchToy = await toyCollections.find({ "toy_name": { $regex: toyName } }).toArray();
+            // console.log(toyName)
+            // const newName = toyName.replace(/[^a-zA-Z0-9 ]/g, '');
+            // console.log(newName)
+            const searchToy = await toyCollections.find({ "toy_name": { $regex: toyName.replace(/[^a-zA-Z0-9 ]/g, '') } }).toArray();
             res.send(searchToy);
         });
 
@@ -57,12 +60,23 @@ async function run() {
             res.send(result)
         })
 
+        app.get("/logedInUserDatas", async (req, res) => {
+            const email = req.query.email;
+            const result = await toyCollections.find({ "seller_email": { $regex: email } }).toArray();
+            res.send(result);
+
+        })
+        app.delete('/allToysDatas/:id', async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: new ObjectId(id) }
+            const result = await toyCollections.deleteOne(query)
+            res.send(result);
+        })
+
 
         // await client.db("admin").command({ ping: 1 });
         // console.log("Pinged your deployment. You successfully connected to MongoDB!");
     } finally {
-        // Ensures that the client will close when you finish/error
-        // await client.close();
     }
 }
 run().catch(console.dir);
