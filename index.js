@@ -38,6 +38,36 @@ async function run() {
             const result = await toyCollections.find(query).toArray()
             res.send(result)
         })
+        // const options = {
+        //     projection: { title: 1, img: 1, service_id: 1, price: 1 },
+        //   };
+
+        app.get("/updateRouteData/:id", async (req, res) => {
+            const id = req.params.id;
+            const query = { _id: new ObjectId(id) };
+            const options = {
+                projection: { price: 1, picture: 1, available_quantity: 1, detail_description: 1 }
+            }
+            const result = await toyCollections.find(query, options).toArray()
+            res.send(result)
+        })
+
+        // update here from updated data route
+        app.patch("/updateRouteData/:id", async (req, res) => {
+            const data = req.body;
+            const id = req.params.id;
+            const query = { _id: new ObjectId(id) }
+            const updatedDoc = {
+                $set: {
+                    price: data.price,
+                    available_quantity: data.available_quantity,
+                    detail_description: data.detail_description
+                }
+            }
+            const result = await toyCollections.updateOne(query, updatedDoc)
+            res.send(result)
+
+        })
 
         app.get("/categoryToyData", async (req, res) => {
             const name = req.query.name;
