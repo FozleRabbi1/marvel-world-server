@@ -31,9 +31,6 @@ async function run() {
             const result = await toyCollections.find(query).toArray()
             res.send(result)
         })
-        // const options = {
-        //     projection: { title: 1, img: 1, service_id: 1, price: 1 },
-        //   };
 
         app.get("/updateRouteData/:id", async (req, res) => {
             const id = req.params.id;
@@ -111,5 +108,5 @@ app.get('/', (req, res) => {
 })
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ====== ${port}`)
+    console.log(`Example app listening on port  ${port}`)
 })
