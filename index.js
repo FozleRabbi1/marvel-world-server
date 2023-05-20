@@ -82,10 +82,17 @@ async function run() {
 
         app.get("/logedInUserDatas", async (req, res) => {
             const email = req.query.email;
-            const result = await toyCollections.find({ "seller_email": { $regex: email } }).toArray();
-            res.send(result);
-
+            const isSort = req.query.isSort;
+           
+            if (isSort === "false") {
+                const result = await toyCollections.find({ "seller_email": { $regex: email } }).sort({ price: 1 }).toArray();
+                res.send(result);
+                return
+            }
+            const result = await toyCollections.find({ "seller_email": { $regex: email } }).sort({ price: -1 }).toArray();
+            res.send(result)
         })
+
         app.delete('/allToysDatas/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: new ObjectId(id) }
