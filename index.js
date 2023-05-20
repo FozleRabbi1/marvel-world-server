@@ -67,12 +67,16 @@ async function run() {
 
         app.get("/allToysDatasName", async (req, res) => {
             const toyName = req.query.toyName;
-            // console.log(toyName)
-            // const newName = toyName.replace(/[^a-zA-Z0-9 ]/g, '');
-            // console.log(newName)
-            const searchToy = await toyCollections.find({ "toy_name": { $regex: toyName.replace(/[^a-zA-Z0-9 ]/g, '') } }).toArray();
-            res.send(searchToy);
+            const seartchText = toyName.toLowerCase();
+            const newData = await toyCollections.find({ "toy_name": { $regex: new RegExp(seartchText, "i") } }).toArray();
+            res.send(newData);
         });
+
+        // app.get("/allToysDatasName", async (req, res) => {
+        //     const toyName = req.query.toyName;
+        //     const searchToy = await toyCollections.find({ "toy_name": { $regex: toyName.replace(/[^a-zA-Z0-9 ]/g, '') } }).toArray();
+        //     res.send(searchToy);
+        // });
 
         app.post("/allToysDatas", async (req, res) => {
             const data = req.body;
@@ -83,7 +87,7 @@ async function run() {
         app.get("/logedInUserDatas", async (req, res) => {
             const email = req.query.email;
             const isSort = req.query.isSort;
-           
+
             if (isSort === "false") {
                 const result = await toyCollections.find({ "seller_email": { $regex: email } }).sort({ price: 1 }).toArray();
                 res.send(result);
