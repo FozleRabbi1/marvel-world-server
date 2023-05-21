@@ -21,7 +21,7 @@ async function run() {
         const toyCollections = client.db("toyCollections").collection("AllToysData");
 
         app.get("/allToysDatas", async (req, res) => {
-            const result = await toyCollections.find().toArray();
+            const result = await toyCollections.find().limit(20).toArray();
             res.send(result)
         })
 
@@ -95,6 +95,7 @@ async function run() {
             }
             const result = await toyCollections.find({ "seller_email": { $regex: email } }).sort({ price: -1 }).toArray();
             res.send(result)
+
         })
 
         app.delete('/allToysDatas/:id', async (req, res) => {
