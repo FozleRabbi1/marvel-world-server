@@ -68,7 +68,7 @@ async function run() {
         app.get("/allToysDatasName", async (req, res) => {
             const toyName = req.query.toyName;
             const seartchText = toyName.toLowerCase();
-            const newData = await toyCollections.find({ "toy_name": { $regex: new RegExp(seartchText, "i") } }).toArray();
+            const newData = await toyCollections.find({ "toy_name": { $regex: new RegExp(seartchText, "i") } }).limit(20).toArray();
             res.send(newData);
         });
 
